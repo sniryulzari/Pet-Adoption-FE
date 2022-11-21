@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px 30px;
+}
+
+/* Home Page */
+.topHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container {
+  background-image: url("./Images/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 340px;
+  right: 120px;
+}
+
+.welcome-title-top {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.welcome-title-bottom-start {
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 65px;
+}
+
+.welcome-title-bottom-end {
+  letter-spacing: 1px;
+  font-weight: 900;
+  font-size: 65px;
+  margin-top: -25px;
+  /* background: -webkit-linear-gradient(right, rgb(255, 145, 86), rgb(224, 245, 36));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.Login-Btn {
+  width: 155px;
+  height: 47px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 50px;
+  background-color: rgb(255, 72, 128);
+  animation: tp-rotateplane 1.2s infinite ease-in-out;
+   
+}
+
+/* nav bar */
+.navBar {
+  min-width: 100vw;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: space-between;
+  /* #edc53b */
+}
+.nav-links {
+  display: flex;
+  list-style-type: none;
+}
+
+.link-container {
+  margin-left: 50px;
+  display: flex;
+}
+
+.link {
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px 40px;
+  margin-top: 10px;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-bottom-page-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 40px;
+  font-size: 30px;
+}
+
+/* signup and login */
+.SignupForm,
+.loginForm {
+  padding: 30px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.signup-modal-bottom,
+.login-modal-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3vh;
+}
+
+.signup-buttons,
+.login-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25vw;
+  margin-bottom: 20px;
+  margin-top: 1vw;
+}
+
+.signup-login-btn {
+  font-size: 18px;
+  width: 10vw;
+  height: 5vh;
+  background-color: #00a277;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+}
+
+.signup-login-btn:hover {
+  background-color: #028a66;
+}
+
+.link-signup {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* admin pages */
+.admin-add-pet-container {
+  margin: 20px;
+  width: 70%;
+}
+.admin-add-pet-form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.add-pet-buttons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.admin-dashboard-pets-container {
+  font-size: 17px;
+  width: 80%;
+}
+
+.users-list,
+.pets-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edit-icon {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: 0.4rem;
+
+  transition-duration: 0.1s;
+}
+
+.edit-icon:hover {
+  transform: scale(1.5);
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.add-pet-button-link,
+.add-pet-buttons {
+  color: white;
+  background-color: #119b76;
+  font-size: 18px;
+  border: none;
+  padding: 0.4vh 1vw;
+  border-radius: 15px;
+  width: 8vw;
+  height: 3vw;
+}
+
+.add-pet-button-link:hover,
+.add-pet-buttons:hover {
+  background-color: #07b687;
+  cursor: pointer;
+}
+
+.pets-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pet {
+  border: 1px solid #404040;
+  margin: 1rem;
+}
+
+/* edit page */
+.admin-add-pet-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pet-img {
+  border-radius: 50%;
+}
+
+/* Search */
+.search-container {
+  margin-top: 2rem;
+}
+
+.search-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pets-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pet-icon {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  transition-duration: 0.1s;
+}
+
+.pet-icon:hover {
+  transform: scale(1.5);
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.search-pet-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.search-pet-btn {
+  width: 18vw;
+  height: 7vh;
+  margin: 50px 0;
+}
+
+.search-pet-results {
+  width: 90vw;
+}
+
+/* pet-card */
+.pet-card-container {
+  margin-top: 10px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pet-card {
+  margin: 2rem;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pet-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-size: 20px;
+}
+
+.pet-info {
+  margin: 1px 0;
+}
+
+.pet-card-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pet-card-button {
+  color: white;
+  background-color: rgb(21, 151, 21);
+  font-size: 20px;
+  border: none;
+  padding: 2vh 4vw;
+  margin: 0 12px;
+  border-radius: 15px;
+}
+
+.pet-card-button:hover {
+  background-color: rgb(5, 109, 5);
+  cursor: pointer;
+}
+
+.pet-card-list {
+  width: 100%;
+}
+
+.my-pets {
+  width: 30% !important;
+}
+
+/* my pets page */
+.my-pets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
